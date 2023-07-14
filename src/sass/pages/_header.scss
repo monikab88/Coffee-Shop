@@ -1,61 +1,68 @@
 .splash {
-    position: relative;
-    height: 100vh;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+  position: relative;
+  height: 100vh;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  ul {
+    margin-top: 40px;
+    list-style-type: none;
+  }
+
+  li {
+    margin-left: 10px;
+    font-size: 20px;
+    opacity: 0.5;
+    margin-right: 25px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-light;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .splash-inner {
+    color: $color-one;
+    font-size: 50px;
+    letter-spacing: 8px;
+
+    h1:first-of-type {
+      margin-right: 0;
+      text-align: left;
+      margin-bottom: -10px;
     }
-    ul {
-      margin-top: 40px;
-      list-style-type: none;
+    
+    h1:last-of-type {
+      position: relative;
+      text-align: right;
+      margin-top: 0;
     }
-    li {
-      margin-left: 10px;
-      font-size: 20px;
-      opacity: 0.5;
-      margin-right: 25px;
-    }
-    a {
-      text-decoration: none;
-      color: $color-light;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    h1:last-of-type::after {
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 50%;
+      content: '';
+      bottom: -35px;
       left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .splash-inner {
-      color: $color-one;
-      font-size: 50px;
-      letter-spacing: 8px;
-      h1:first-of-type {
-        margin-right: 0;
-        text-align: left;
-        margin-bottom: -10px;
-      }
-      h1:last-of-type {
-        position: relative;
-        text-align: right;
-        margin-top: 0;
-      }
-      h1:last-of-type::after {
-        position: absolute;
-        content: '';
-        bottom: -35px;
-        left: 50%;
-        width: 200px;
-        height: 5px;
-        transform: translateX(-50%);
-        background: $color-one;
-      }
+      width: 200px;
+      height: 5px;
+      transform: translateX(-50%);
+      background: $color-one;      
     }
     .splash-foot {
       color: $color-light;  
@@ -83,6 +90,7 @@
     i {
       font-size: 40px;
     }
+  }
 }
 .splash::before {
     content: "";
