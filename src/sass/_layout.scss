@@ -1,27 +1,27 @@
 .container {
-    max-width: 1140px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }    
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}    
   
-  section {
-    padding: 30px 0;
-  }
+section {
+  padding: 30px 0;
+}
   
-  .row {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;    
+.row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;    
 }
 
 .col {
   flex: 0 50%;
-  }
+}
   
-  .col-3 {
-    flex: 0 0 33%;   
-  }
+.col-3 {
+  flex: 0 0 33%;   
+}
 
 .section-title {
   position: relative;

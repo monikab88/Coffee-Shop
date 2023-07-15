@@ -4,7 +4,11 @@ export const select = {
   },
   containerOf: {
     products: '#products-list',
+    pages: '#pages',
   },
+  nav: {
+    links: '.nav-navigation a',
+  }
 };
   
 export const settings = {
@@ -12,6 +16,9 @@ export const settings = {
     url: '//localhost:3131',
     products: 'products',
   },
+};
+export const classNames = {
+  active: 'active',
 };
   
 export const templates = {

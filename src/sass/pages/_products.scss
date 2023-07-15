@@ -1,59 +1,61 @@
 .products {
-    img {
-        box-shadow: 0 0 50px 0 #959595;
+  img {
+    box-shadow: 0 0 50px 0 #959595;
+  }
+    
+  h3 {
+    font-size: 48px;
+  }
+    
+  .products-image-left {
+    margin-left: 25px;
+    margin-top: -250px;
+  }
+    
+  .products-description-right {
+    margin-left: 700px;
+  }
+    
+  .products-description {
+    .properties {
+      font-size: 20px;
+      font-weight: $font-bold;
+      margin-top: 50px;
+    
+      p {
+        margin-bottom: -15px;
       }
-    
-      h3 {
-        font-size: 48px;
+
+      span {
+        color: $color-one;
       }
-    
-      .products-image-left {
-       margin-left: 25px;
-       margin-top: -250px;
-      }
-    
-      .products-description-right {
-        margin-left: 700px;
-      }
-    
-      .products-description {
-        .properties {
-          font-size: 20px;
-          font-weight: $font-bold;
-          margin-top: 50px;
-    
-          p {
-            margin-bottom: -15px;
-        }
-        span {
-            color: $color-one;
-          }
-        }
-        .description {
-            font-size: 15px;
-            position: relative;
-            padding-left: 130px;
-            padding-right: 100px;
-            margin-top: -30px;
-          }
+    }
+
+    .description {
+      font-size: 15px;
+      position: relative;
+      padding-left: 130px;
+      padding-right: 100px;
+      margin-top: -30px;
+    }
       
-          .description::after {
-            position: absolute;
-            content: '';
-            bottom: 40px;
-            left: 60px;
-            width: 100px;
-            height: 5px;
-            transform: translateX(-50%);
-            background: $color-one;
-          }
-        }
+    .description::after {
+      position: absolute;
+      content: '';
+      bottom: 40px;
+      left: 60px;
+      width: 100px;
+      height: 5px;
+      transform: translateX(-50%);
+      background: $color-one;
+    }
+  }
       
-        .row {
-          margin-bottom: 100px;
-        }
+  .row {
+    margin-bottom: 100px;
+  }
       
-        .pd-right {
-          margin-right: -40px;
-        }
-      }
+  .pd-right {
+    margin-right: -40px;
+  }
+}
